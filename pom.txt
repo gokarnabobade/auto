@@ -1,0 +1,25 @@
+public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "F:\\Automation\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/signup");
+		driver.manage().window().maximize();
+		Signup ss = new Signup(driver);
+		
+		//tc01
+		ss.enterFirstName("pravin");
+		ss.enterLastName("alandikar");
+		ss.enterEmail("test@123");
+		ss.selectGender();
+		ss.selectMonth("mar");
+		
+		//tc02
+		
+		ss.enterFirstName("pravin");
+		ss.enterLastName("alandikar");
+		ss.enterEmail("test@123");
+		ss.selectGender();
+		ss.selectMonth("mar");
+	}
+
+
+}
